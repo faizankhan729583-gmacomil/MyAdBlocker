@@ -1,0 +1,9 @@
+Package: com.vzuv.adblocker
+Name: MyAdBlocker
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: PhotoEnhancer AdBlocker
+Maintainer: vzuv
+Author: vzuv
+Section: Tweaks
