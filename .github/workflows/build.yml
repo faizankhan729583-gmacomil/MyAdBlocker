@@ -8,13 +8,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Theos
-        uses: beerpiss/theos-action@v1.3.0
+      - name: Setup Theos Manually
+        run: |
+          git clone --recursive https://github.com/theos/theos.git $GITHUB_WORKSPACE/theos
+          curl -LO https://github.com/theos/sdks/archive/master.zip
+          unzip -q master.zip
+          mv sdks-master/* $GITHUB_WORKSPACE/theos/sdks/
 
       - name: Build Tweak
         run: |
           make FINALPACKAGE=1
           find . -name "*.dylib" -exec cp {} . \;
+        env:
+          THEOS: ${{ github.workspace }}/theos
 
       - name: Upload Dylib
         uses: actions/upload-artifact@v4
