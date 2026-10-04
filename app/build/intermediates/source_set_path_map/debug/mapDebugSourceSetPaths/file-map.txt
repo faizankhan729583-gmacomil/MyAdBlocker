@@ -1,0 +1,7 @@
+com.myadblocker.test.app-pngs-0 /workspaces/MyAdBlocker/app/build/generated/res/pngs/debug
+com.myadblocker.test.app-resValues-1 /workspaces/MyAdBlocker/app/build/generated/res/resValues/debug
+com.myadblocker.test.app-packageDebugResources-2 /workspaces/MyAdBlocker/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.myadblocker.test.app-packageDebugResources-3 /workspaces/MyAdBlocker/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.myadblocker.test.app-debug-4 /workspaces/MyAdBlocker/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.myadblocker.test.app-debug-5 /workspaces/MyAdBlocker/app/src/debug/res
+com.myadblocker.test.app-main-6 /workspaces/MyAdBlocker/app/src/main/res
