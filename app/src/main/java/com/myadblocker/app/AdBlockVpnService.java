@@ -8,9 +8,6 @@ import android.net.VpnService;
 import android.os.Build;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
-import android.os.Handler;
-import android.os.Looper;
-import android.widget.Toast;
 import android.system.Os;
 import android.system.OsConstants;
 import android.system.StructPollfd;
@@ -206,9 +203,6 @@ public class AdBlockVpnService extends VpnService {
     }
 
     private void shutdown() {
-        new Handler(Looper.getMainLooper()).post(() ->
-                Toast.makeText(getApplicationContext(),
-                        "Service shutdown", Toast.LENGTH_SHORT).show());
         isRunning = false;
         running = false;
 

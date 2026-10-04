@@ -13,7 +13,6 @@ import android.os.Looper;
 import android.view.Gravity;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -58,7 +57,7 @@ public class MainActivity extends Activity {
                 ViewGroup.LayoutParams.MATCH_PARENT));
 
         TextView title = new TextView(this);
-        title.setText("My Ad Blocker v6");
+        title.setText("My Ad Blocker");
         title.setTextSize(28);
         title.setTypeface(null, Typeface.BOLD);
         title.setTextColor(Color.BLACK);
@@ -93,10 +92,7 @@ public class MainActivity extends Activity {
         stopBtn.setText("STOP");
         stopBtn.setTextColor(Color.WHITE);
         stopBtn.setBackgroundColor(Color.parseColor("#C62828"));
-        stopBtn.setOnClickListener(v -> {
-            Toast.makeText(this, "STOP pressed", Toast.LENGTH_SHORT).show();
-            stopVpnService();
-        });
+        stopBtn.setOnClickListener(v -> stopVpnService());
 
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
